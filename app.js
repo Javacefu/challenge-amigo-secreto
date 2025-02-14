@@ -17,10 +17,14 @@ function agregarAmigo(){
     
     if (ingresoNombre == ""){
         alert('Por favor, ingrese un nombre');
-        return;
     } else {
         listaAmigos.push(ingresoNombre);
         console.log(listaAmigos);   
     }
+    limpiarEntrada();
+    return;
 }
 
+function limpiarEntrada(){
+    let valorEntrada = document.querySelector('#amigo').value = '';
+}
