@@ -14,5 +14,10 @@ let listaAmigos = [];
 function agregarAmigo(){
     let ingresoNombre = document.getElementById('amigo').value;
     console.log(ingresoNombre);
-    return;
+    
+    if (ingresoNombre == ""){
+        alert('Por favor, ingrese un nombre');
+        return;
+    }
 }
+
