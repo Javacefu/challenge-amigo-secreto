@@ -1,30 +1,38 @@
-// El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
-/*
-Agregar nombres: Los usuarios escribirán el nombre de un amigo en un campo de texto y lo agregarán a una lista visible al hacer clic en "Adicionar".
+let amigos = [];
 
-Validar entrada: Si el campo de texto está vacío, el programa mostrará una alerta pidiendo un nombre válido.
-
-Visualizar la lista: Los nombres ingresados aparecerán en una lista debajo del campo de entrada.
-
-Sorteo aleatorio: Al hacer clic en el botón "Sortear Amigo", se seleccionará aleatoriamente un nombre de la lista y se mostrará en la página.
-*/
-
-let listaAmigos = [];
-
-function agregarAmigo(){
-    let ingresoNombre = document.getElementById('amigo').value;
-    console.log(ingresoNombre);
+function agregarAmigo() {
+    const input = document.getElementById("amigo");
+    const nombre = input.value.trim();
     
-    if (ingresoNombre == ""){
-        alert('Por favor, ingrese un nombre');
-    } else {
-        listaAmigos.push(ingresoNombre);
-        console.log(listaAmigos);   
+    if (nombre === "") {
+        alert("Por favor, ingresa un nombre válido.");
+        return;
     }
-    limpiarEntrada();
-    return;
+    
+    amigos.push(nombre);
+    actualizarLista();
+    input.value = "";
 }
 
-function limpiarEntrada(){
-    let valorEntrada = document.querySelector('#amigo').value = '';
+function actualizarLista() {
+    const lista = document.getElementById("listaAmigos");
+    lista.innerHTML = "";
+    
+    for (let i = 0; i < amigos.length; i++) {
+        const li = document.createElement("li");
+        li.textContent = amigos[i];
+        lista.appendChild(li);
+    }
+}
+
+function sortearAmigo() {
+    if (amigos.length === 0) { 
+        alert("No hay amigos en la lista para sortear.");
+        return;
+    }
+    
+    const indiceAleatorio = Math.floor(Math.random() * amigos.length); 
+    const amigoSorteado = amigos[indiceAleatorio]; 
+    
+    document.getElementById("resultado").innerHTML = `<li>${amigoSorteado}</li>`; 
 }
