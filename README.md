@@ -16,9 +16,6 @@ Este proyecto es una aplicación web sencilla que permite organizar un sorteo de
 
 ![Clickeando boton sortear amigo](https://github.com/user-attachments/assets/f989ccb3-9c2a-4f3a-aec9-65c086f67822)
 
-###  Abrir la aplicación
-- Accede al enlace proporcionado para utilizar la aplicación sin necesidad de descargas.
-
 ### 1️⃣ Agregar amigos
 - En el campo de texto, escribe el nombre de un amigo.
 - Presiona el botón "Añadir" para agregar el nombre a la lista.
