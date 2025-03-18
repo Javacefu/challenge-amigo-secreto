@@ -1,10 +1,6 @@
 <h1 align="center"># Amigo Secreto 🎁</h1>
 
-
 ![Imagen de portada Amigo secreto](https://github.com/user-attachments/assets/f683c22b-41bb-4ab7-b161-6c9e6d5ab258)
-!https://img.shields.io/badge/any_text-you_like-blue
-
-<img src="https://img.shields.io/badge/any_text-you_like-blue">
 
 ## Descripción
 Este proyecto es una aplicación web sencilla que permite organizar un sorteo de **Amigo Secreto**. Los usuarios pueden agregar nombres de amigos y luego sortear aleatoriamente un nombre de la lista. La aplicación está desarrollada con **HTML, CSS y JavaScript**.
@@ -15,22 +11,22 @@ Este proyecto es una aplicación web sencilla que permite organizar un sorteo de
 - Sortea aleatoriamente un nombre de la lista.
 - Muestra el resultado en pantalla.
 
-## Uso del Proyecto
-Puedes acceder a la aplicación directamente desde el siguiente enlace:
 
-🔗 **[Amigo Secreto - Enlace Directo](#)** _(Reemplaza con tu URL)_
+![Ejemplo de ingreso de los nombres](https://github.com/user-attachments/assets/2acb2fa0-c007-4015-9320-638de274ce09)
 
-### 1️⃣ Abrir la aplicación
+![Clickeando boton sortear amigo](https://github.com/user-attachments/assets/f989ccb3-9c2a-4f3a-aec9-65c086f67822)
+
+###  Abrir la aplicación
 - Accede al enlace proporcionado para utilizar la aplicación sin necesidad de descargas.
 
-### 2️⃣ Agregar amigos
+### 1️⃣ Agregar amigos
 - En el campo de texto, escribe el nombre de un amigo.
 - Presiona el botón "Añadir" para agregar el nombre a la lista.
 - Se mostrarán los nombres ingresados debajo del formulario.
 
-### 3️⃣ Sortear un amigo secreto
+### 2️⃣ Sortear un amigo secreto
 - Una vez que hayas agregado todos los nombres, presiona el botón "Sortear amigo".
 - La aplicación elegirá un nombre al azar y lo mostrará en pantalla.
 
-### 4️⃣ Repetir el sorteo
+### 3️⃣ Repetir el sorteo
 - Si deseas hacer otro sorteo, puedes ingresar más nombres y volver a sortear.
